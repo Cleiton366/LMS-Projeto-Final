@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="..\css\style-contact-us.css">
+    <link rel="stylesheet" href="..\css\FontAwesome\css\all.css">
+</head>
+
+<body>
+
+    <header class="header" id="header"></header>
+
+    <div id="div-tittle"></div>
+    <section id="main">
+        <div class="grid">
+            <div id="contact-us-info-01">
+                <h2 class="H2">E-mail Address</h2>
+                <a class="A" id="a-main" href="mailto:email-example@email.com">email-example@email.com</a>
+            </div>
+            <div id="contact-us-info-02">
+                <h2 class="H2">Phone Number</h2>
+                <a class="A" id="a-main" href="tel:99 999999">99 999999</a>
+            </div>
+            <div id="contact-us-info-03">
+                <h2 class="H2">Our social midia</h2>
+                <a href="https://www.facebook.com/">
+                    <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/32/social-facebook-icon.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="https://www.flaticon.com/svg/vstatic/svg/174/174855.svg?token=exp=1611177868~hmac=f8a44673fe8943b053daac79f02771fc"
+                        alt="">
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+    <div id="contact-us-form">
+        <h2 class="H2" id="h2-form">Get in touch by calling or using the form below.</h2>
+        <form action="" id="form">
+            <p class="P">Fields marked with an<a id="Asterisk"> * </a>are required</p>
+            <h3 class="H3">Name<a id="Asterisk">*</a></h3>
+            <input type="text" id="form-name" required>
+            <h3 class="H3">E-mail<a id="Asterisk">*</a></h3>
+            <input type="email" id="form-email" required>
+            <h3 class="H3">Message<a id="Asterisk">*</a></h3>
+            <input type="text" id="form-message">
+            <br>
+            <button class="btn" id="submit-btn" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer id="footer"></footer>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="..\js\render\renderHeader.js"></script>
+<script src="..\js\render\renderFooter.js"></script>
+<script src="..\js\effects\scrollFunc.js"></script>
+<script src="..\js\effects\openNav.js"></script>
+<script src="..\js\effects\darkMode.js"></script>
+
+</html>

@@ -1,0 +1,36 @@
+/*Footer  */
+
+footer {
+    background: black;
+    height: 120px;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+footer li {
+    color: white;
+    margin: 30px;
+}
+
+footer img {
+    height: 32px;
+    width: 32px;
+}
+/*Footer hover */
+footer a:hover {
+    transition: 0.5s;
+    font-size: 12pt;
+    transform: rotateX(50);
+    color: rgb(15, 226, 15);
+}
+
+/*icons*/
+.fa-facebook-square{
+    font-size: 25pt;
+}
+
+.fa-instagram{
+    font-size: 25pt;
+}
