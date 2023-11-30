@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="..\css\my-account.css">
+    <link rel="stylesheet" href="..\css\FontAwesome\css\all.css">
+</head>
+
+<body>
+    <header class="header" id="header"></header>
+
+
+    <section id="main">
+        <div class="row">
+            <div class="small-container" id="send-user-img">
+                <a onclick="closeImgUser()"><i class="fas fa-times"></i></a>
+                <form action="" method='post' enctype='multipart/form-data'>
+                    <input type="file">
+                    <input type="submit" class="btn" id="send-btn" value="Change Photo">
+                </form>
+                <div id="new-user-img">
+                    <img id="new-img" src="" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="small-container" id="user-info">
+            <div id="user-img-container">
+                <img id="user-img" src="https://www.lifestylesolutionsbyworldmark.com/img/global/icon-user.svg" alt="">
+            </div>
+            <a onclick="openImgUser()"><i class="fas fa-plus-square"></i></a>
+            <form action="">
+                <p class="P">User name:
+                    <input id="user-name" type="text" value="user-name">
+                </p>
+                <p class="P">E-mail:
+                    <input style="margin-left: 40px;" id="user-email" type="text" value="user-email">
+                </p>
+                <input type="submit" class="btn" id="save-btn" value="Save Changes">
+            </form>
+        </div>
+    </section>
+
+
+    <footer id="footer"></footer>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="..\js\render\renderHeader.js"></script>
+<script src="..\js\render\renderFooter.js"></script>
+<script src="..\js\effects\scrollFunc.js"></script>
+<script src="..\js\effects\openNav.js"></script>
+<script src="..\js\effects\darkMode.js"></script>
+
+</html>
