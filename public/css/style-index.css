@@ -6,7 +6,7 @@ h4 {
 }
 
 #div-1 {
-    height: 600px;
+    height: 60vh; 
     background: url(https://cdn.stocksnap.io/img-thumbs/960w/man-child_ALW7AN344Z.jpg);
     background-size: cover;
 }
@@ -14,70 +14,67 @@ h4 {
 #div-1>h1 {
     margin: auto;
     text-align: center;
-    padding-top: 55vh;
-    padding-right: 40vw;
+    padding-top: 15vh; 
+    padding-right: 10vw; 
 }
 
 #div-2 {
+    height: 60vh; 
     background: url(https://cdn.stocksnap.io/img-thumbs/960w/sun-trees_BPWSN5EFQC.jpg);
-    height: 600px;
     background-size: cover;
 }
 
-#h1-1-div-2 {
+#h1-1-div-2,
+#h1-2-div-2 {
     padding-top: 10vh;
-    padding-right: 10vw;
-    text-align: right;
+    text-align: center;
+}
+
+#h1-1-div-2 {
+    padding-right: 10vw; 
 }
 
 #h1-2-div-2 {
-    padding-left: 10vw;
-    padding-top: 10vh;
-    text-align: left;
+    padding-left: 10vw; 
 }
 
 #div-3 {
+    height: 60vh; 
     background: url(https://cdn.stocksnap.io/img-thumbs/960w/tree-silhouette_8GDYH5XYCO.jpg);
-    height: 600px;
     background-size: cover;
 }
 
 #div-3>h1 {
-    padding-top: 40vh;
+    padding-top: 20vh; 
     text-align: center;
 }
 
 #div-4 {
+    height: 60vh; 
     background: url(https://www.localfutures.org/wp-content/uploads/D533D33B-2A86-4D13-84DF-A2FF6FFC7D7B-scaled.jpeg);
-    height: 600px;
     background-size: cover;
 }
 
 #div-4>h1 {
-    padding-top: 20vh;
-    padding-right: 10vw;
-    text-align: right;
+    padding-top: 10vh; 
+    text-align: center; 
 }
-
-/*categories*/
 
 .categorie {
     text-align: center;
-    margin: 150px 0;
+    margin: 5vh 0; 
     flex-basis: 30%;
     min-width: 250px;
 }
 
 .categorie>a>img {
-    width: 360px;
-    height: 500px;
-    min-width: 250px;
+    width: 100%; 
+    max-width: 360px; 
+    height: auto; 
 }
 
-/*featured-offers*/
-
 .featured-offer {
-    margin: 50px;
+    margin: 5vw; 
 }
 
 .featured-offer>h2 {
@@ -85,33 +82,32 @@ h4 {
 }
 
 .offer-info, .offer {
-    margin: 20px;
+    margin: 2vw; 
 }
 
 .offer-info {
     text-align: center;
-    margin-left: 120px;
-    margin-top: 130px;
+    margin-left: 0;
+    margin-top: 5vh; 
 }
 
 .offer>a>img {
-    height: 400px;
-    width: 400px;
+    width: 100%; 
+    max-width: 400px; 
+    height: auto; 
 }
 
 #buy-btn {
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 120px;
-    height: 40px;
-    font-size: 12pt;
+    margin-top: 1vh; 
+    margin-left: 1vw;
+    width: 20vw; 
+    height: 5vh; 
+    font-size: 2vw; 
     color: black;
     border-style: none;
     background: rgb(15, 212, 48);
     border-radius: 12px;
 }
-
-/*imgs-zoom effect*/
 
 .categorie>a>img, .offer>a>img {
     transition: transform .2s;
@@ -119,4 +115,20 @@ h4 {
 
 .categorie>a>img:hover, .offer>a>img:hover {
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    #div-1>h1 {
+        padding-right: 0;
+    }
+
+    #h1-1-div-2,
+    #h1-2-div-2 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #div-4>h1 {
+        padding-right: 0;
+    }
 }
